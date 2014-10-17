@@ -1,0 +1,1 @@
+The way lab solutions get handled is the same way that lab grading gets handled. Refer to the README in the "grading" directory.

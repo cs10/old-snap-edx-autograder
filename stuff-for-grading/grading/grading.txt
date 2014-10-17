@@ -1,0 +1,121 @@
+# I am using these hashtags as comment lines
+# When writing new tests, stick to the syntax show in the Factorial example below
+# If a block takes in multiple inputs, they can be represented like a python tuple.
+#     For example, the arguments 1 and 2 can be passed into the “max of x and y” block as # (1,2)
+#     Any number of values are allowed in a tuple
+# Lists can also be represented like python lists
+# You are allowed to nest lists within other lists or tuples
+# Lastly, don’t put spaces anywhere in tuples and lists. The block that parses this file will error out if you do.
+# UPDATE: add a colon after each block name
+
+### Factorial ###
+
+Factorial:
+    Inputs 1 2 3 4 5 6
+    Expected 1 2 6 24 120 720
+
+### Palindrome example ###
+
+Palindrome:
+    Inputs racecar seebees bib run
+    Expected true true true false
+
+### LISTS I ###
+Beatles:
+    Inputs
+    Expected [John,Paul,George,Ringo]
+
+At-least-five-letters:
+    Inputs [being,for,the,benefit,of,mister,kite] [self,defense,family]
+    Expected [being,benefit,mister] [defense,family]
+
+Acronym:
+    Inputs [Beauty,and,Joy,of,Computing] [University,of,California,at,Berkeley] [Build,Your,Own,Blocks]
+    Expected BJC UCB BYOB
+
+Exaggerate:
+    Inputs (I had 6 really good potstickers for dinner)
+    Expected (I had 12 really great potstickers for dinner)
+
+expand:
+    Inputs (she loves you 3 yeah) (My friends they come around they 7 flatter)
+    Expected (she loves you yeah yeah yeah) (My friends they come around they flatter flatter flatter flatter flatter flatter flatter)
+
+Swap-items:
+
+### Lists II ###
+substitute-letter:
+    Inputs ([_,O,X,_,O,_,X,X,O], 5) ([_,O,X,_,O,_,X,X,O], 6)
+    Expected O 6
+
+find-triples:
+    Inputs [_,O,X,_,O,_,X,X,O]
+    Expected [[1,O,X],[4,O,6],[X,X,O],[1,4,X],[O,O,X],[X,6,O],[1,O,O],[X,O,X]]
+
+substitute-triple:
+    Inputs ([1,2,3],[_,O,X,_,O,_,X,X,O]) ([1,4,7],[_,O,X,_,O,_,X,X,O])
+    Expected [1,0,X] [1,4,X]
+
+appearances:
+Inputs (O,[1,O,O]) (x,[O,O,2])
+Expected 2 0
+
+### Abstraction and Testing ###
+
+Max:
+    Inputs (1,2) (5,3) (-100,-99) (66,52) (99,99) (1243,3242)
+    Expected 2 5 -99 66 99 3242
+
+### Algorithms ###
+Unsorted-list:
+    Inputs (7,[]) (2,[8]) (2,[2]) (5,[9,3,7]) (2,[10,4,2,3,8]) (16,[17,19,6,16]) (20,[20,15])
+    Expected 0 0 1 0 3 4 1
+
+Sorted-list:
+    Inputs (3,[]) (10,[8]) (23,[23]) (50,[1,25,39,50,68]) (9,[2,7,9]) (8,[3,5,6,8]) (22,[0,1])
+    Expected 0 0 1 4 3 4 0
+
+### Algorithmic Complexity ###
+
+List-Sum:
+    Inputs [1,2,3,4,5] [4,-2,-8] [6,2] [0,0,0]
+    Expected 15 -6 8 0
+
+Distinct-numbers:
+    Inputs [6,2,7,9,1] [68,35,46,68,1] [-1,-4,-2,-1] [] [1,2] [0,0]
+    Expected true false false true true false
+
+Insert-numbers:
+    Inputs (1,5,[6,2,8]) (6,9,[0,0]) (2,5,[]) (-4,-2,[9,4]) (0,0,[1,2,3,4,5])
+    Expected [1,2,3,4,5] [6,7,8,9] [2,3,4,5] [-4,-3,-2] [0]
+
+### Lab 14 - Practice with HOFs and Functions as Data ###
+
+Numbers-between:
+    Inputs (5,8) (-2,2)
+    Expected [5,6,7,8] [-2,-1,0,1,2]
+
+Word-to-List:
+    Inputs berkeley snap
+    Expected [b,e,r,k,e,l,e,y] [s,n,a,p]
+
+Is-pandigital:
+    Inputs 15432 11132
+    Expected true false
+
+List-all-pandigital-between:
+    Inputs (1,135)
+    Expected [1,12,21,123,132]
+
+Is-factorion:
+    Inputs 145 12
+    Expected true false
+
+List-all-factorion-between:
+    Inputs (1,150)
+    Expected [1,2,145]
+
+### Lab 15 - HOFs with Recursion (DEPRECATED) ###
+
+
+

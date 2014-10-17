@@ -1,0 +1,10 @@
+Factorial-Sol
+Palindrome-Sol
+Abstraction-and-Testing-Sol
+Lists-1-Sol
+Algorithms-Sol
+Algorithmic-Complexity-Sol
+Recursion-Reporters-Sol
+Lists-2-Sol
+Lambda+HOFs1-Sol
+Lambda+HOFs2-Sol

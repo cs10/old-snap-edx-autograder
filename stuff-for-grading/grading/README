@@ -1,0 +1,7 @@
+Here is a description of what each of the files in this folder is used for:
+
+- GRADING
+    A list of all of the labs with grading blocks that can be imported. This list is what gets displayed when you click "file->Grading Solutions" in Snap. Whenever one of the items in this list gets clicked in Snap, Snap will try to import an xml file with the same name from the edx "file uploads" section. For example, if I clicked "Algorithmic-Complexity", then Snap will try to load an xml file called "Algorithmic-Complexity.xml". Currently, this example is the only working example on the CS10 test building course right now, so you can try it out yourself.
+
+- grading.txt
+    This file contains all of the test cases for blocks that will be graded in lab. You can read more about this file in the comments at the beginning of the file itself, but basically, each block that will be graded gets declared in this file, followed by the inputs that will be passed into it and the expected outputs that should result from those inputs. This file should also be in the "file uploads" of the edx course.
